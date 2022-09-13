@@ -31,7 +31,7 @@ const MenuCategoryList = () => {
       <ol>
         {categoryData?.map((category) => (
           <div>
-            <li id={category.id}>{category.name}</li>
+            <li key={category.id}>{category.name}</li>
             <ul>
               <MenuItemsList category={category["menu-items"]} />
             </ul>
